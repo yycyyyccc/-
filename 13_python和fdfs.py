@@ -16,3 +16,11 @@ Type "help", "copyright", "credits" or "license" for more information.
 >>> print(ret)
 {'Group name': b'group1', 'Remote file_id': b'group1/M00/00/00/wKgfnl_z4IuAO4FrAAAABr99wgM4277861', 'Status': 'Upload successed.', 'Local file name': './test', 'Uploaded size': '6B', 'Storage IP': b'192.168.31.158'}
 >>> 
+
+
+默认上传文件
+
+通过一个自定义一个存储类必须是Storage的子类
+
+
+
