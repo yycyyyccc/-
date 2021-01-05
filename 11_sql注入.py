@@ -24,7 +24,10 @@ root@kali:~# apt-get install docker-ce
 root@kali:~# docker pull acgpiano/sqli-labs
 
 root@kali:~# docker run -dt --name sqli -p 80:80 --rm acgpiano/sqli-labs
-
+yyc@yyc-Lenovo-G50-45:~$ sudo docker run -dt --name sqli -p 666:80 --rm acgpiano/sqli-labs
+5c03afde0ac37fe1648ee61d5ddae501536fecc9faf2729c92d0f01c68809eab
+这个访问666端口
+http://127.0.0.1:666/Less-1/?id=1
 
 
 #---------------------------
