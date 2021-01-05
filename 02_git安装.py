@@ -188,6 +188,7 @@ git stash pop 回到工作现场
 
 
 #  ----githbu 创建仓库
+yycyyccc
 
 分布式
 中央服务器保存完整代码
@@ -213,14 +214,23 @@ new ssh KEY
 
 把电脑ssh公钥复制过来
 
-在～ 下vim gitconfig
+在～ 下vim .gitconfig
 
+--------------------------------------
 [user]
     email = 邮箱
     name = 用户名
+
+[user]
+        email = 1050653794@qq.com
+        name = yycyyyccc
+----------------------------------------
 # 创建公钥
 ssh-keygen -t rsa -C '邮箱'
 。。。告诉文件路径，两次回车就行
+
+ssh-keygen -t rsa -C 1050653794@qq.com
+
 
 cd .ssh
 id_rsa 私钥
@@ -399,4 +409,7 @@ zrmreangebyscore a4 5 6  # 删除权值5--6之间的元素，删除5和6
 
 ---# 
 
+#====================================================
+git branch 查看分支
+git push origin smart 推送到远程
 

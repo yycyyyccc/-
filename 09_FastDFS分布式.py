@@ -42,4 +42,24 @@ fdfs_trackerd /etc/fdfs/tracker.conf start
 
 fdfs_storaged  /etc/fdfs/storage.conf start
 
+ps  aux|grep fdfs 查看
+
+--------------------
+
+ sudo cp client.conf.sample client.conf
+复制修改client.conf
+
+# the base path to store log files
+base_path=/home/yyc/fastdfs/tracker
+
+# tracker_server can ocur more than once, and tracker_server format is
+#  "host:port", host can be hostname or ip address
+tracker_server=192.168.31.158:22122
+
+上传文件测试
+# 内置函数                指定配置           上创的文件
+fdfs_upload_file /etc/fdfs/client.conf wallhaven-4xed8z.png
+group1/M00/00/00/wKgfnl_ytUKAKg8RADAJoP6zfUE272.png  # 返回的信息，‘存的指纹’
+
+
 
