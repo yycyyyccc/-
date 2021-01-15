@@ -106,7 +106,7 @@ screenshot  获取屏幕照片
 
 load kiwi
 
-creds-all 查看明文密码
+creds_all 查看明文密码
 
 run post/windows/manage/enable_rdp 启动远程桌面
 

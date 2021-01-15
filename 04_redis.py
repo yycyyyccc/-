@@ -350,3 +350,14 @@ repl_backlog_histlen:210
 
 celery -A celery_tasks.tasks worker -l info
 启动celery中间人
+celery -A celery_tasks.tasks worker
+celery -A celery_tasks.tasks worker -l info
+在dailyfresh目录下  celery_tasks目录下的tasks
+
+========================================================
+启动redis服务
+
+sudo redis-server /etc/redis/redis.conf
+
+ps -axu |grep redis
+

