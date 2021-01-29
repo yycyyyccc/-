@@ -412,7 +412,8 @@ zrmreangebyscore a4 5 6  # 删除权值5--6之间的元素，删除5和6
 #====================================================
 git branch 查看分支
 git push origin smart 推送到远程
-
+克隆别人的代码
+git clone https://github.com/conwnet/wpa-dictionary.git
 
 git pull origin smart
 把远程分支拉取smart代码
