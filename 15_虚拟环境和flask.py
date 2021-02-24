@@ -1,7 +1,7 @@
 sudo pip install virtualenv
 sudo pip install virtualenvwrapper
 # 1
-创建目录春芳虚拟环境
+创建目录存放虚拟环境
 mkdir $HOME/.virtualenvs
 # 2打开～/.bashc 文件添加
 export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3
